@@ -59,7 +59,7 @@ JARVIS requires a valid `.jarvis` licence file to run. Licences are issued perso
 | **Enterprise** | 20 – 50 | **800,000 PKR** |
 | **Custom**     | 50+     | Contact us to bargain a price |
 
-**To buy a licence, email:** **quada.industries@gmail.com**
+**To buy a licence, email:** **ananix.inc@gmail.com**
 
 Include:
 - Your name and organisation
