@@ -4,7 +4,7 @@
 
 This repository contains **compiled Windows binaries only**. Source code is proprietary and not distributed.
 
-**🌐 Website:** **https://quada-jarvis.vercel.app**
+**🌐 Website:** **https://ananix-jarvis.vercel.app**
 
 ---
 
