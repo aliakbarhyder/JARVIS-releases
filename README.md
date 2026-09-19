@@ -36,7 +36,7 @@ Older builds are on the [releases page](https://github.com/aliakbarhyder2/JARVIS
 
 ## Buy a licence
 
-JARVIS requires a valid `.jarvis` licence file to run. Licences are issued personally to you by Quad-A Industries, machine-bound, and non-transferable.
+JARVIS requires a valid `.jarvis` licence (`some `.jarvis` files come encrypted as a `.jarcrypt` file, which requires a password to unencrypt. Ananix Inc. provides this password to you when sending an encrypted licence`) file to run. Licences are issued personally to you by Ananix Inc., machine-bound, and non-transferable.
 
 ### Personal · 1 computer
 
