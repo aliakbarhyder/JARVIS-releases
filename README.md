@@ -10,7 +10,7 @@ This repository contains **compiled Windows binaries only**. Source code is prop
 
 ## Download
 
-**Latest release:** https://github.com/aliakbarhyder2/JARVIS-releases/releases/latest
+**Latest release:** https://github.com/aliakbarhyder/JARVIS-releases/releases/latest
 
 Every release ships **four** artifacts — one per platform:
 
