@@ -1,6 +1,6 @@
 # J.A.R.V.I.S — MARK XLVIII
 
-**Official downloads for JARVIS, the real-time voice AI assistant by Quad-A Industries.**
+**Official downloads for JARVIS, the real-time voice AI assistant by Ananix Inc.**
 
 This repository contains **compiled Windows binaries only**. Source code is proprietary and not distributed.
 
