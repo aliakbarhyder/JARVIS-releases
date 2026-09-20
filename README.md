@@ -1,8 +1,8 @@
-# J.A.R.V.I.S — MARK XLVIII
+# J.A.R.V.I.S — MARK LIV (v2.3.0)
 
 **Official downloads for JARVIS, the real-time voice AI assistant by Ananix Inc.**
 
-This repository contains **compiled Windows binaries only**. Source code is proprietary and not distributed.
+This repository contains **compiled binaries only** (Windows, macOS, Linux). Source code is proprietary and not distributed.
 
 **🌐 Website:** **https://ananix-jarvis.vercel.app**
 
@@ -22,7 +22,7 @@ Every release ships **four** artifacts — one per platform:
 | **Linux** (any distro) | `JARVIS-<version>.AppImage` | `chmod +x` the file and run it. Portable, no install, no root. |
 | **Ubuntu / Debian** | `jarvis_<version>_amd64.deb` | `sudo dpkg -i jarvis_*.deb` — installs to `/opt/jarvis`, runnable as `jarvis`. |
 
-Older builds are on the [releases page](https://github.com/aliakbarhyder/JARVIS-releases/releases). You should always be on the latest — JARVIS auto-updates itself on Windows once installed (Mac/Linux auto-update is on the roadmap).
+Older builds are on the [releases page](https://github.com/aliakbarhyder/JARVIS-releases/releases). You should always be on the latest — **JARVIS auto-updates on every platform** (Windows, macOS, and Linux) once installed.
 
 **System requirements:**
 - Windows 10/11 · macOS 12+ · Linux with glibc 2.35+ (Ubuntu 22.04+, Fedora 36+, Arch, etc.)
@@ -72,7 +72,7 @@ We'll reply with the licence file (a `.jarvis` attachment or a paste-friendly co
 
 ## First launch
 
-1. Double-click `JARVIS.exe`
+1. Install (Windows: run `JARVIS-Setup-<version>.exe`; macOS: open the `.dmg` and drag; Linux: `.deb` install or `chmod +x` the AppImage)
 2. Paste your **licence code** (or drop your `.jarvis` file) — sent to you by email
 3. Paste your **Gemini API key**
 4. Say hello
@@ -83,24 +83,27 @@ That's it. JARVIS creates its config folder inside your user profile automatical
 
 ## Auto-updates
 
-Once installed, JARVIS silently checks this repository on every launch. When a newer release is published:
+Once installed, JARVIS silently checks this repository on every launch. When a newer release is published, it self-updates on **all three platforms**:
 
 - JARVIS says *"Installing an update, sir. I'll be right back."*
-- Downloads the new `JARVIS.exe`
-- Swaps itself in place and restarts on the new version
-- Your licence, API key, memory, and settings all carry over
+- **Windows** — downloads `JARVIS-Setup-<version>.exe`, runs it silently (`/VERYSILENT`), and relaunches when the install finishes.
+- **macOS** — downloads `JARVIS-<version>.dmg`, mounts it, copies the new `JARVIS.app` over the existing one (waiting for the running app to exit), and relaunches.
+- **Linux (AppImage)** — downloads `JARVIS-<version>.AppImage`, swaps it in place of the running file, and relaunches it.
+- **Linux (.deb)** — downloads `jarvis_<version>_amd64.deb`, installs via `pkexec dpkg -i` (asks for your password), and relaunches.
 
-To disable auto-updates, set `"auto_update": false` in `%LOCALAPPDATA%\JARVIS\config\api_keys.json`.
+On every platform: your licence, API key, memory, and settings all carry over.
+
+To disable auto-updates, set `"auto_update": false` in your config's `api_keys.json` (`%LOCALAPPDATA%\JARVIS\config\api_keys.json` on Windows, `~/Library/Application Support/JARVIS/config/api_keys.json` on macOS, `~/.config/JARVIS/config/api_keys.json` on Linux).
 
 ---
 
 ## Legal
 
-Use of `JARVIS.exe` is governed by the [LICENSE](./LICENSE) in this repository. In summary: this is proprietary software. You may use it under a paid licence. You may not modify, redistribute, republish, reverse-engineer, or resell it. **Read the LICENSE file before using the software.**
+Use of the JARVIS binaries is governed by the [LICENSE](./LICENSE) in this repository. In summary: this is proprietary software. You may use it under a paid licence. You may not modify, redistribute, republish, reverse-engineer, or resell it. **Read the LICENSE file before using the software.**
 
 ## Security
 
-See [SECURITY.md](./SECURITY.md) for our vulnerability-reporting policy and what to do if you suspect the `JARVIS.exe` on this repo has been tampered with.
+See [SECURITY.md](./SECURITY.md) for our vulnerability-reporting policy and what to do if you suspect the binaries on this repo have been tampered with.
 
 ---
 
