@@ -22,7 +22,7 @@ Every release ships **four** artifacts — one per platform:
 | **Linux** (any distro) | `JARVIS-<version>.AppImage` | `chmod +x` the file and run it. Portable, no install, no root. |
 | **Ubuntu / Debian** | `jarvis_<version>_amd64.deb` | `sudo dpkg -i jarvis_*.deb` — installs to `/opt/jarvis`, runnable as `jarvis`. |
 
-Older builds are on the [releases page](https://github.com/aliakbarhyder2/JARVIS-releases/releases). You should always be on the latest — JARVIS auto-updates itself on Windows once installed (Mac/Linux auto-update is on the roadmap).
+Older builds are on the [releases page](https://github.com/aliakbarhyder/JARVIS-releases/releases). You should always be on the latest — JARVIS auto-updates itself on Windows once installed (Mac/Linux auto-update is on the roadmap).
 
 **System requirements:**
 - Windows 10/11 · macOS 12+ · Linux with glibc 2.35+ (Ubuntu 22.04+, Fedora 36+, Arch, etc.)
@@ -106,7 +106,7 @@ See [SECURITY.md](./SECURITY.md) for our vulnerability-reporting policy and what
 
 ## Support & contact
 
-**Email:** quada.industries@gmail.com
+**Email:** ananix.inc@gmail.com
 
 This is a downloads-only repository. Issues and pull requests are **not accepted here**.
 
@@ -114,4 +114,4 @@ For sales, licence renewal, activation problems, or bug reports: email us at the
 
 ---
 
-© Quad-A Industries. All rights reserved.
+© Ananix Inc. All rights reserved.

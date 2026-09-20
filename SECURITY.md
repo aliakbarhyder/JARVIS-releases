@@ -2,11 +2,11 @@
 
 ## Reporting a vulnerability
 
-If you believe you have found a security issue in **JARVIS.exe** — a way to bypass licence verification, escalate privileges, execute arbitrary code, exfiltrate a user's API key or licence, or otherwise cause harm — please report it to **Quad-A Industries** privately.
+If you believe you have found a security issue in **JARVIS.exe** — a way to bypass licence verification, escalate privileges, execute arbitrary code, exfiltrate a user's API key or licence, or otherwise cause harm — please report it to **Ananix Inc.** at **ananix.inc@gmail.com** privately.
 
 **Do NOT open a public GitHub issue.** This repository does not accept issues; even if it did, public disclosure of an unfixed vulnerability puts every JARVIS user at risk.
 
-**Private disclosure channel:** contact Quad-A Industries directly (via the contact you used to purchase your licence, or via any other private channel you have with the publisher).
+**Private disclosure channel:** email **ananix.inc@gmail.com** (or use the contact you used to purchase your licence).
 
 ### What to include in a report
 
@@ -48,7 +48,7 @@ If you suspect a `JARVIS.exe` on this repository has been tampered with (uploade
 
 1. **Do NOT run the suspicious `.exe`**
 2. **Do NOT auto-update** — set `"auto_update": false` in your `%LOCALAPPDATA%\JARVIS\config\api_keys.json` immediately
-3. Contact Quad-A Industries privately with the details
+3. Contact Ananix Inc. privately at **ananix.inc@gmail.com** with the details
 4. Wait for confirmation before running any newer release
 
 ---
@@ -63,11 +63,11 @@ Only the **latest** released version of JARVIS is supported for security updates
 
 For completeness, JARVIS's licence system uses **Ed25519** digital signatures:
 
-- **Private key** — held only by Quad-A Industries on our internal signing machine. Never leaves that machine. Never included in `JARVIS.exe`. Used to sign every `.jarvis` licence file we issue.
-- **Public key** — baked into every `JARVIS.exe`. Used at startup to verify that a `.jarvis` file was genuinely issued by Quad-A Industries and has not been altered since. Public keys can only verify signatures, never create them — publishing them is safe by design.
+- **Private key** — held only by Ananix Inc. on our internal signing machine. Never leaves that machine. Never included in `JARVIS.exe`. Used to sign every `.jarvis` licence file we issue.
+- **Public key** — baked into every `JARVIS.exe`. Used at startup to verify that a `.jarvis` file was genuinely issued by Ananix Inc. and has not been altered since. Public keys can only verify signatures, never create them — publishing them is safe by design.
 
-Only Quad-A Industries can produce licences that verify against the public key in `JARVIS.exe`. A licence purporting to come from us but signed by any other key will be rejected as tampered.
+Only Ananix Inc. can produce licences that verify against the public key in `JARVIS.exe`. A licence purporting to come from us but signed by any other key will be rejected as tampered.
 
 ---
 
-© Quad-A Industries. All rights reserved.
+© Ananix Inc. All rights reserved.
